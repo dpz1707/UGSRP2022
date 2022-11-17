@@ -107,6 +107,8 @@ for img in images:
                     classifierInput[5] += 1
                 else:
                     classifierInput[10] += 1
+                    
+                #have to re-do ground truth to include chain fence
                 cv2.rectangle(writtenImg, (int(xLeft), int(yUpper)), (int(xRight), int(yLower)), (0, 255, 0), 2) #draws the lines by hand
                 cv2.putText(writtenImg, workzoneObject, (int(xLeft), int(yUpper+height)), font, 0.3, (0, 0, 0), 1, cv2.LINE_AA) #labels the object above the bounding box
 
