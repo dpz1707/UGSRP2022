@@ -9,3 +9,5 @@ zipClean.py is the main file I used as it parses a zip file and pulls out images
 
 
 finalIntegration.py contains the final workflow, which integrates the classification algorithm with computer vision. Datasets are not provided, although the model training follows standard procedure of jpg files and respectively named label files. Classifier training uses a .csv file, and the columns should be adjusted accordingly. 
+
+Note that I should try to test the data on something like XGBoost or LightGBM 
